@@ -62,7 +62,6 @@ const WFA_DATA = {
   { Month: 58, SD3neg: 12.2, SD2neg: 13.8, SD1neg: 15.8, SD0: 18, SD1: 20.6, SD2: 23.7, SD3: 27.2 },
   { Month: 59, SD3neg: 12.3, SD2neg: 14, SD1neg: 15.9, SD0: 18.2, SD1: 20.8, SD2: 23.9, SD3: 27.6 },
   { Month: 60, SD3neg: 12.4, SD2neg: 14.1, SD1neg: 16, SD0: 18.3, SD1: 21, SD2: 24.2, SD3: 27.9 }
-
   ],
   Female: [
    { Month: 0, SD3neg: 2, SD2neg: 2.4, SD1neg: 2.8, SD0: 3.2, SD1: 3.7, SD2: 4.2, SD3: 4.8 },
