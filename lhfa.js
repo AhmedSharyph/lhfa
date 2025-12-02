@@ -2,6 +2,8 @@
 (function (global) {
   class HeightForAge {
     constructor() {
+            this.boys = [
+
      { Month:0,  SD3neg:44.2, SD2neg:46.1, SD1neg:48.0, SD0:49.9, SD1:51.8, SD2:53.7, SD3:55.6 },
         { Month:1,  SD3neg:48.9, SD2neg:50.8, SD1neg:52.8, SD0:54.7, SD1:56.7, SD2:58.6, SD3:60.6 },
         { Month:2,  SD3neg:52.4, SD2neg:54.4, SD1neg:56.4, SD0:58.4, SD1:60.4, SD2:62.4, SD3:64.4 },
