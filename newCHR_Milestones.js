@@ -3,7 +3,8 @@
  * newCHR_Milestones Library
  * Version: 1.0.0
  * Author: Your Name
- * Description: Dynamically render child milestone forms by age/month
+ * Description: Dynamically render child milestone forms by age/month.
+ * Frontend handles placement, styling, and events.
  * License: MIT
  */
 
@@ -20,10 +21,10 @@ const newCHR_Milestones = (function () {
     {month: 2, category: "Movement/Physical Development", label: "Holds head up when on tummy", name: "holds_head_up_on_tummy"},
     {month: 2, category: "Movement/Physical Development", label: "Moves both arms and both legs", name: "moves_both_arms_and_legs"},
     {month: 2, category: "Movement/Physical Development", label: "Opens hands briefly", name: "opens_hands_briefly"},
-    // Add more months later
+    // Add more months as needed
   ];
 
-  // --- Category Colors (Tailwind CSS classes) ---
+  // --- Category Colors for Tailwind ---
   const categoryColors = {
     "Social/Emotional Milestones": "bg-blue-100 border-blue-400",
     "Language/Communication Milestones": "bg-green-100 border-green-400",
@@ -36,7 +37,7 @@ const newCHR_Milestones = (function () {
     return milestonesData.filter(m => m.month === month);
   }
 
-  // --- Create Yes/No select element ---
+  // --- Create a Yes/No select ---
   function createSelect(name) {
     const select = document.createElement('select');
     select.name = name;
@@ -59,7 +60,7 @@ const newCHR_Milestones = (function () {
     return select;
   }
 
-  // --- Render form ---
+  // --- Render form dynamically ---
   function renderForm(month, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -71,7 +72,7 @@ const newCHR_Milestones = (function () {
       return;
     }
 
-    // Group by category
+    // Group milestones by category
     const categories = [...new Set(milestones.map(m => m.category))];
 
     categories.forEach(cat => {
@@ -106,6 +107,8 @@ const newCHR_Milestones = (function () {
   }
 
   return {
+    getByMonth,
+    createSelect,
     renderForm
   };
 
