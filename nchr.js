@@ -16,7 +16,6 @@ const newCHR_Milestones = (() => {
 
   // --- Milestones Data ---
   const milestonesData = [
-const MILESTONES = [
   // ================== 2 Months ==================
   { month: 2, category: "MILESTONE I - Social/Emotional Milestones", label: "Calms down when spoken to or picked up", name: "calms_down" },
   { month: 2, category: "MILESTONE I - Social/Emotional Milestones", label: "Looks at your face", name: "looks_face" },
